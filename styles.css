@@ -9,6 +9,10 @@ body {
   background: linear-gradient(180deg, white 27rem, hsl(0, 0%, 95%) 27rem);
 }
 
+main {
+  overflow: hidden;
+}
+
 .page {
   display: flex;
   flex-flow: row wrap;
@@ -181,9 +185,17 @@ button:hover {
 }
 
 .copy {
-  width: 4rem;
+  width: 5rem;
   height: 1.75rem;
   margin: 0rem 1rem;
+}
+
+.copied {
+  background-color: hsl(257, 27%, 26%);
+}
+
+.copied:hover {
+  background-color: hsl(257, 27%, 26%);
 }
 
 .statistics {
