@@ -4,7 +4,8 @@ const shortenedLinks = document.querySelector("#shortened-links");
 const shortenIt = document.querySelector("#shorten-it");
 const urlInput = document.querySelector("#url-input");
 const copy = document.querySelector(".copy");
-const copiedLink = document.querySelector(".shortened-link").closest("a");
+const copyButtons = document.querySelectorAll(".copy");
+const copiedLink = document.querySelector(".shortened-link");
 const shortenedLink = document.querySelector(".shortened-link");
 /*const API = new FetchWrapper('')*/
 
@@ -16,8 +17,8 @@ shortenIt.addEventListener("click", () => {
       `<div class="shortened-div">
         <p class="original-link">${urlInput.value}</p>
         <div>
-          <a class="shortened-link">placeholder</a>
-          <button class="copy" onclick="copyContent()">
+          <a class="shortened-link">https://relink/k4lKyk</a>
+          <button class="copy">
            Copy
           </button>
         </div>
@@ -37,3 +38,14 @@ const copyContent = async () => {
     alert("Oops, something went wrong.");
   }
 };
+
+copyButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    document.querySelector(".copied")?.classList.remove("copied");
+    event.currentTarget.textContent = "Copied!";
+    event.currentTarget.classList.add("copied");
+    navigator.clipboard.writeText(
+      event.currentTarget.previousElementSibling.textContent
+    );
+  });
+});
