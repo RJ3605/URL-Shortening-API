@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  color: hsl(255, 11%, 22%);
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, white 27rem, hsl(0, 0%, 95%) 27rem);
+}
+
+.page {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1.5rem 3rem 5rem 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-sub {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 1rem;
+}
+
+a:hover {
+  color: hsl(180, 66%, 49%);
+  cursor: pointer;
+}
+
+.header-link {
+  font-size: 0.5rem;
+  font-weight: 800;
+  padding-left: 1rem;
+  cursor: pointer;
+  color: gray;
+}
+
+.header-link:hover {
+  color: hsl(255, 11%, 22%);
+}
+
+.login {
+  padding-right: 1rem;
+}
+
+.sign-up {
+  font-size: 10px;
+  padding: 0.4rem 0.75rem;
+}
+
+.header-link:hover {
+  color: hsl(255, 11%, 22%);
+}
+
+.title-div {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title {
+  width: 60%;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0;
+  max-width: 24rem;
+  line-height: 3.4rem;
+}
+
+.title-p {
+  margin-top: 0;
+  max-width: 22rem;
+  font-size: 14px;
+}
+
+p {
+  color: hsl(0, 0%, 60%);
+  font-size: 12px;
+}
+
+.get-started {
+  font-size: 12px;
+  padding: 0.5rem 1.5rem;
+}
+
+.working {
+  width: 22rem;
+  margin-top: 3rem;
+  margin-right: -7rem;
+}
+
+button {
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: hsl(180, 66%, 75%);
+  cursor: pointer;
+}
+
+.shortener {
+  display: flex;
+  justify-content: right;
+  padding: 1.5rem;
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-repeat: none;
+  background-position: center;
+  background-color: hsl(257, 27%, 26%);
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+#shorten-it,
+#url-input,
+.copy {
+  border-radius: 0.25rem;
+}
+
+#url-input {
+  border: none;
+  width: 100%;
+  padding-left: 1rem;
+  outline: none;
+}
+
+.empty {
+  outline: solid orangered;
+}
+
+#shorten-it {
+  width: 8rem;
+}
+
+.space {
+  width: 1rem;
+}
+
+.shortened-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0.25rem 0;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+#shortened-links {
+  width: 100%;
+}
+
+.original-link {
+  color: hsl(260, 8%, 14%);
+  margin-left: 1rem;
+}
+
+.shortened-link {
+  color: hsl(180, 66%, 49%);
+  font-size: 12px;
+}
+
+.copy {
+  width: 4rem;
+  height: 1.75rem;
+  margin: 0rem 1rem;
+}
+
+.statistics {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.statistics p {
+  text-align: center;
+  width: 50%;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+.benefits-div {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: hsl(257, 27%, 26%);
+}
+
+.benefits-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: hsl(257, 27%, 26%);
+  border: solid 0.4rem hsl(257, 27%, 26%);
+  border-radius: 1.75rem;
+  margin-top: -1.25rem;
+}
+
+.benefits {
+  border-radius: 0.25rem;
+  max-width: 27%;
+  background-color: white;
+  padding: 0 1rem;
+}
+
+#first {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+#third {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.boost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 7rem;
+  color: white;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-repeat: none;
+  background-position: center;
+}
+
+h4 {
+  margin-bottom: 0.6rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+}
+
+.second {
+  filter: invert(1);
+}
+
+.features,
+.resources,
+.company {
+  display: flex;
+  flex-flow: column;
+}
+
+h5 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.features a,
+.resources a,
+.company a {
+  color: hsl(0, 0%, 60%);
+  font-size: 12px;
+}
+
+.features a:hover,
+.resources a:hover,
+.company a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.icon {
+  width: 1rem;
+  padding-right: 0.5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
