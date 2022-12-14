@@ -159,6 +159,11 @@ button:hover {
   width: 1rem;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .shortened-div {
   display: flex;
   align-items: center;
@@ -174,12 +179,12 @@ button:hover {
   width: 100%;
 }
 
-.original-link {
+.original {
   color: hsl(260, 8%, 14%);
   margin-left: 1rem;
 }
 
-.shortened-link {
+.output {
   color: hsl(180, 66%, 49%);
   font-size: 12px;
 }
@@ -208,7 +213,7 @@ button:hover {
 
 .statistics p {
   text-align: center;
-  width: 50%;
+  width: 22rem;
 }
 
 h3 {
@@ -287,7 +292,7 @@ h4 {
 }
 
 .second {
-  filter: invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .features,
