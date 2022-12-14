@@ -34,8 +34,7 @@ shortenIt.addEventListener("click", async () => {
 
 shortenedLinks.addEventListener("click", (event) => {
   if (event.target.className === "copy") {
-    copiedButton = document.querySelector(".copied");
-    copiedButton?.classList.remove("copied");
+    document.querySelector(".copied")?.classList.remove("copied");
     event.target.textContent = "Copied!";
     event.target.classList.add("copied");
     navigator.clipboard.writeText(
