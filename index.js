@@ -13,9 +13,7 @@ const API = new FetchWrapper("https://api.shrtco.de/v2");
 shortenIt.addEventListener("click", async (event) => {
   event.preventDefault();
   if (urlInput.value !== "") {
-    await API.get(`/shorten?url=${urlInput.value}`, {
-      url: urlInput.value,
-    }).then((data) => {
+    await API.get(`/shorten?url=${urlInput.value}`).then((data) => {
       console.log(data);
       shortenedLinks.insertAdjacentHTML(
         `beforeend`,
