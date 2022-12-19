@@ -6,7 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, white 27rem, hsl(0, 0%, 95%) 27rem);
+  background: linear-gradient(180deg, white 32.5rem, hsl(0, 0%, 95%) 32.5rem);
 }
 
 main {
