@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  overflow: hidden;
+  max-width: 1440px;
 }
 
 .page {
@@ -79,30 +79,30 @@ a:hover {
 
 h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
-  max-width: 24rem;
-  line-height: 3.4rem;
+  max-width: 30rem;
+  line-height: 4.4rem;
 }
 
 .title-p {
   margin-top: 0;
-  max-width: 22rem;
-  font-size: 14px;
+  max-width: 27rem;
+  font-size: 18px;
 }
 
 p {
   color: hsl(0, 0%, 60%);
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .get-started {
-  font-size: 12px;
-  padding: 0.5rem 1.5rem;
+  font-size: 18px;
+  padding: 0.75rem 1.75rem;
 }
 
 .working {
-  width: 22rem;
+  width: 27rem;
   margin-top: 3rem;
   margin-right: -7rem;
 }
@@ -110,10 +110,11 @@ p {
 button {
   color: white;
   background-color: hsl(180, 66%, 49%);
-  border-radius: 1rem;
+  border-radius: 3rem;
   padding: 0.25rem 0.5rem;
   border: none;
   font-weight: 700;
+  font-size: 18px;
 }
 
 button:hover {
@@ -124,14 +125,15 @@ button:hover {
 .shortener {
   display: flex;
   justify-content: right;
-  padding: 1.5rem;
+  align-items: center;
+  padding: 2rem;
   background-image: url(./images/bg-boost-desktop.svg);
   background-repeat: none;
   background-position: center;
   background-color: hsl(257, 27%, 26%);
   width: 100%;
-  height: 2rem;
-  border-radius: 0.25rem;
+  height: 4rem;
+  border-radius: 0.5rem;
 }
 
 #shorten-it,
@@ -143,8 +145,16 @@ button:hover {
 #url-input {
   border: none;
   width: 100%;
-  padding-left: 1rem;
+  height: 2.7rem;
+  padding-left: 1.5rem;
   outline: none;
+  font-size: 18px;
+  border-radius: 0.5rem;
+}
+
+#url-input:invalid {
+  color: palevioletred;
+  border: solid;
 }
 
 .empty {
@@ -152,7 +162,9 @@ button:hover {
 }
 
 #shorten-it {
-  width: 8rem;
+  width: 12rem;
+  height: 3.25rem;
+  border-radius: 0.5rem;
 }
 
 .space {
@@ -182,16 +194,24 @@ ul {
 .original {
   color: hsl(260, 8%, 14%);
   margin-left: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 .output {
   color: hsl(180, 66%, 49%);
-  font-size: 12px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 .copy {
-  width: 5rem;
-  height: 1.75rem;
+  width: 6rem;
+  height: 2.25rem;
   margin: 0rem 1rem;
 }
 
@@ -217,7 +237,7 @@ ul {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .benefits-div {
@@ -236,11 +256,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: hsl(257, 27%, 26%);
   border: solid 0.4rem hsl(257, 27%, 26%);
-  border-radius: 1.75rem;
+  border-radius: 5rem;
   margin-top: -1.25rem;
 }
 
@@ -249,6 +269,10 @@ h3 {
   max-width: 27%;
   background-color: white;
   padding: 0 1rem;
+}
+
+.description {
+  font-size: 12px;
 }
 
 #first {
@@ -271,15 +295,16 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 7rem;
   color: white;
   background-color: hsl(257, 27%, 26%);
   background-image: url(./images/bg-boost-desktop.svg);
   background-repeat: none;
   background-position: center;
+  padding-bottom: 2.5rem;
 }
 
 h4 {
+  font-size: 30px;
   margin-bottom: 0.6rem;
 }
 
